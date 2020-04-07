@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Scores for Automatic Grading </title>
+</head>
+
+<body>
+    <form action="">
+        <link rel="stylesheet" href="">
+        <h1>STUDENTS'S SCORE</h1>
+        <table cellspacing='10'>
+            <tr>
+                <td> <label for="input" id="input"> Scores</label></td>
+                <td> <input type="input"> Input Score</td>
+            </tr>
+
+
+        </table>
+
+        <button type="submit" onclick="GetScores();">SUBMIT</button>
+        <script>
+            var gradeA;
+            var gradeB;
+            var gradeC;
+            var gradeF;
+            var input;
+
+            function GradeA() {
+                for (let gradeA = 81; gradeA < 100; gradeA++) {
+                    alert('Grade A');
+                }
+
+                function GradeB() {
+                    for (let gradeB = 70; gradeB < 80; gradeB++) {
+                        console.log('Grade B');
+                    }
+                }
+
+                function GradeC() {
+                    for (let gradeC = 50; gradeC < 69; gradeC++) {
+                        console.log('Grade C');
+                    }
+                }
+
+                function GradeF() {
+                    for (let gradeF = 0; gradeF < 49; gradeF++) {
+                        console.log('Grade F');
+                    }
+                }
+            }
+
+            function getScores() {
+                if (input >= 81 && input <= 100) {
+                    alert('GradeA');
+                } else if (input >= 70 && input <= 80) {
+                    alert('GradeB');
+                } else if (input >= 50 && input <= 69) {
+                    alert('GradeC');
+                } else if (input >= 0 && input <= 49) {
+                    alert('GradeF');
+                }
+
+            }
+        </script>
+</body>
+
+</html>
